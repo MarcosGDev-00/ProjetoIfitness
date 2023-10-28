@@ -14,7 +14,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header.cabeçalho {
@@ -82,7 +82,7 @@ div.lista {
 }
 
 div.teste {
-  margin-left: 775px;
+  margin-left: 760px;
 }
 
 span.conta {
@@ -143,3 +143,30 @@ nav.menu a {
   font-family: var(--poppins);
   font-weight: bold;
 } */
+
+section.cards {
+  display: flex;
+  max-width: 90%;
+  margin: 20px auto;
+  background-color: red;
+  padding: 10px;
+}
+
+article.artigoCards {
+  background-color: green;
+  display: block;
+  max-width: 100%;
+}
+
+div.imgCards {
+  display: block;
+}
+
+.figureCards {
+  background-image: url("https://img.freepik.com/fotos-premium/suplementos-esportivos-e-halteres-fechados-em-um-fundo-escuro-composicao-plana-com-proteina-e_179738-951.jpg?w=2000");
+}
+
+figure.figureCards img {
+  width: 100%;
+  height: 50px;
+}
