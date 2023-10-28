@@ -39,7 +39,7 @@ div.funcoes {
 
 div.PesuisaConta {
   display: flex;
-  margin: 8px 0px 0px 256px;
+  margin: 8px 0px 0px 3px;
 }
 
 div.barraDePesquisa {
@@ -52,6 +52,7 @@ div.barraDePesquisa {
   width: 409px;
   height: 20px;
   margin-top: 4px;
+  margin-left: 10px;
 }
 
 input#inputTexto {
@@ -76,15 +77,18 @@ div.lista {
   overflow-y: auto;
 }
 
+.icons {
+  display: flex;
+}
+
+div.teste {
+  margin-left: 775px;
+}
+
 span.conta {
   font-size: 50px;
   color: #324b52;
   margin-left: 5px;
-}
-
-div.foneBolsa {
-  display: flex;
-  margin: 8px 0px 0px 540px;
 }
 
 span.fone {
@@ -114,7 +118,7 @@ div.menuLocalizacao {
 span.distancia {
   font-size: 50px;
   color: #ffffff;
-  margin: 3px 0px 0px -10px;
+  margin: 3px 0px 0px 0px;
 }
 
 /* nav.menu {
