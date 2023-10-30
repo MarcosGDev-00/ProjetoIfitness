@@ -34,14 +34,13 @@ nav.n1 {
 
 div.funcoes {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 63px;
-  margin: auto;
 }
 
 div.PesuisaConta {
   display: flex;
-  margin: 8px 0px 0px 3px;
+  margin: 8px 0px 0px 254px;
 }
 
 div.barraDePesquisa {
@@ -84,23 +83,36 @@ div.lista {
 }
 
 div.teste {
-  margin-left: 760px;
+  margin-left: 600px;
 }
 
 span.conta {
   font-size: 50px;
   color: #324b52;
   margin-left: 5px;
+  cursor: pointer;
+}
+
+a.home {
+  text-decoration: none;
+}
+
+span.home {
+  font-size: 50px;
+  color: #324b52;
+  cursor: pointer;
 }
 
 span.fone {
   font-size: 50px;
   color: #324b52;
+  cursor: pointer;
 }
 
 span.bolsa {
   font-size: 50px;
   color: #324b52;
+  cursor: pointer;
 }
 
 nav.n2 {
@@ -113,7 +125,7 @@ nav.n2 {
 
 div.menuLocalizacao {
   display: flex;
-  width: 90%;
+  width: 97%;
   margin: 0 auto;
 }
 
@@ -121,45 +133,18 @@ span.distancia {
   font-size: 50px;
   color: #ffffff;
   margin: 3px 0px 0px 0px;
+  cursor: pointer;
 }
-
-/* nav.menu {
-  margin: 0px 0px 0px 217px;
-  width: 473px;
-}
-
-nav.menu ul {
-  display: flex;
-}
-
-nav.menu li {
-  list-style-type: none;
-  text-align: justify;
-  width: 473px;
-  margin-top: 14px;
-}
-
-nav.menu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: var(--poppins);
-  font-weight: bold;
-} */
 
 section.cards {
   display: flex;
-  max-width: 90%;
-  margin: 0px auto;
+  max-width: 66%;
+  margin: 30px auto;
+  overflow:hidden;
 }
 
 article.artigoCards {
-  display: block;
-  max-width: 100%;
   margin: 10px;
-}
-
-div.imgCards {
-  display: block;
 }
 
 div.figureCards {
@@ -209,7 +194,7 @@ a.maisCards:hover {
 div.cardSlide {
   display: flex;
   margin: 20px auto;
-  width: 90%;
+  width: 97%;
   height: 500px;
   text-align: center;
   align-items: center;
@@ -217,11 +202,12 @@ div.cardSlide {
 
 div.main {
   width: 90%;
-  height: 500px;
+  height: 300px;
   margin: 20px auto;
   box-shadow: 0px 0px 3px grey;
   position: relative;
   overflow: hidden;
+  border-radius: 50px;
 }
 
 img.slide {
@@ -247,27 +233,12 @@ div.nav button {
 
 span.prev {
   font-weight: bolder;
+  cursor: pointer;
 }
 
-/* div.carrossel {
-  box-shadow: 2px 2px 4px black;
-  overflow: hidden;
-  height: 500px;
-  width: 500px;
-  margin: 20px auto;
+span.next {
+  cursor: pointer;
 }
-
-div.container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-}
-
-div.container img {
-  object-fit: cover;
-  height: 500px;
-  width: 500px;
-} */
 
 section.carrosselSlide {
   background-color: var(--azul);
@@ -280,7 +251,7 @@ section.carrosselSlide {
 }
 
 div.wrapper {
-  width: 90%;
+  width:70%;
   margin: 20px auto;
   position: relative;
   display: flex;
@@ -303,15 +274,12 @@ div.wrapper i:last-child {
   display: none;
 }
 
-div.wrapper .carousel {
+div.wrapper div.carousel {
   font-size: 0px;
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
   scroll-behavior: smooth;
-}
-
-div.carousel {
   margin: 0 auto;
   width: 90%;
   height: 100%;
@@ -338,3 +306,202 @@ div.carousel img:first-child {
   margin-left: 0px;
 }
 
+/* TELA DE VENDAS */
+
+section.telaVendas {
+  max-width: 97%;
+  height: 650px;
+  margin: 20px auto;
+  display: flex;
+  box-shadow: 2px 2px 4px grey;
+}
+
+div.imgVenda {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+div.imgVenda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+div.imgPVenda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  margin: 10px;
+  box-shadow: 0px 0px 2px rgb(124, 124, 124);
+}
+
+div.imgPVenda img {
+  margin-bottom: 5px;
+}
+
+div.bodyVenda {
+  width: 40%;
+  height: 100%;
+}
+
+div.descricaoVenda {
+  padding: 10px;
+  display: flex;
+  text-align: left;
+  align-items: baseline;
+  position: relative;
+}
+
+div.textDescricao h3 {
+  text-align: left;
+  align-items: center;
+  color: var(--azul);
+  margin: 0px 10px;
+  font-family: var(--poppins);
+}
+
+div.icon {
+  text-align: center;
+  align-items: center;
+}
+
+div.icon i.i1 {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+div.icon i.i2 {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+div.icon i.i1:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+div.starDescricao {
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+div.starDescricao i {
+  color: #ffffff;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+div.starDescricao i:hover {
+  color: yellow;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+div.preco {
+  margin-top: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+div.preco i {
+  color: var(--vermelho);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+div.preco span {
+  color: #324b52;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--montserrat);
+}
+
+div.modelos {
+  text-align: left;
+  padding: 20px;
+}
+
+div.modelos p {
+  text-align: left;
+  color: #324b52;
+  margin-bottom: 10px;
+  font-family: var(--montserrat);
+}
+
+div.imgModelos {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  height: 60px;
+}
+
+div.imgModelos img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid black;
+}
+
+div.tamanho {
+  text-decoration: none;
+  border: none;
+  margin-top: 20px;
+}
+
+div.tamanho span {
+  background-color: #d5d5d5;
+  border-radius: 50%;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+div.tamanho span:hover {
+  border: 2px solid var(--vermelho);
+  margin-left: 12px;
+}
+div.final {
+  padding-left: 20px;
+  text-align: left;
+}
+
+div.comprar {
+  display: flex;
+}
+
+div.comprar button {
+  border: 1px solid white;
+  background-color: var(--vermelho);
+  color: white;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+button.b1 {
+  margin-right: 10px;
+  font-weight: bold;
+  font-family: var(--montserrat);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+div.textoFinal {
+  margin-top: 10px;
+  text-align: left;
+  align-items: baseline;
+}
+
+div.textoFinal p {
+  font-family: var(--montserrat);
+  color: #324b52;
+}

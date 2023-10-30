@@ -25,23 +25,6 @@ const slideImage = () => {
   )
 }
 
-// const imgs = document.getElementById("img")
-// const img = document.querySelectorAll("#img img")
-
-// let idx = 0;
-
-// function carrossel() {
-//   idx++;
-
-//   if(idx > img.length - 1) {
-//     idx = 0;
-//   }
-
-//   imgs.style.transform = `translateX(${-idx * 500}px)`;
-// }
-
-// setInterval(carrossel, 1800)
-
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0];
 arrowIcons = document.querySelectorAll(".wrapper i");
