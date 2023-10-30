@@ -174,6 +174,7 @@ div.figureCards {
 
 div.bodyCards {
   width: 95.5%;
+  background-color: #4b88a24f;
   text-align: justify;
   margin: 0px auto;
   box-shadow: 0px 0px 20px #f3f3f3;
@@ -185,7 +186,6 @@ div.bodyCards h2 {
   font-family: var(--montserrat);
   letter-spacing: 2px;
 }
-
 
 div.bodyCards  p {
   color: #504f4f;
@@ -206,3 +206,147 @@ a.maisCards {
 a.maisCards:hover {
   text-decoration: underline;
 }
+
+div.cardSlide {
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+}
+
+div.main {
+  width: 90%;
+  height: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 3px grey;
+  position: relative;
+  overflow: hidden;
+}
+
+img.slide {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  position: absolute;
+}
+
+div.nav {
+  text-align: center;
+}
+
+div.nav button {
+  font-size: 25px;
+  padding: 5px;
+  text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.162);
+  border: none;
+  text-align: center;
+  align-items: center;
+}
+
+span.prev {
+  font-weight: bolder;
+}
+
+/* #container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: teal;
+  display: grid ;
+  place-items: center
+}
+
+#slider-container {
+  height: 300px;
+  width: 85vw;
+  max-width: 1400px;
+  background: #54d5e4;
+  box-shadow: 5px 5px 8px gray inset;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#slider-container .btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 30px;
+  width: 30px;
+  border-left: 8px solid pink;
+  border-top: 8px solid pink;
+}
+
+#slider-container .btn:hover {
+  transform: scale(1.2);
+}
+
+#slider-container .btn.inactive {
+  border-color: rgb(153, 121, 126)
+}
+
+#slider-container .btn:first-of-type {
+  transform: rotate(-45deg);
+  left: 10px
+}
+
+#slider-container .btn:last-of-type {
+  transform: rotate(135deg);
+  right: 10px;
+}
+
+#slider-container #slider {
+  display: flex;
+  width: 1000%;
+  height: 100%; 
+  transition: all .5s;
+}
+
+#slider-container #slider .slide {
+  height: 90%;
+  margin: auto 10px;
+  background-color: #a847a4;
+  box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+  display: grid;
+  place-items: center;
+}
+
+#slider-container #slider .slide span {
+  color: white;
+  font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: calc(2.5% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: calc(3.3333333% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  #slider-container #slider .slide {
+    width: calc(5% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  #slider-container #slider .slide {
+    width: calc(10% - 20px);
+  }
+
+} */
