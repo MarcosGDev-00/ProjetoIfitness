@@ -463,11 +463,13 @@ div.tamanho span {
   border-radius: 50%;
   margin-left: 15px;
   padding: 10px;
+  cursor: pointer;
 }
 
 div.tamanho span:hover {
   border: 2px solid var(--vermelho);
   margin-left: 12px;
+  cursor: pointer;
 }
 div.final {
   padding-left: 20px;
