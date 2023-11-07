@@ -5,6 +5,7 @@
 :root {
   --azul: #4B88A2;
   --vermelho: #BB0A21;
+  --cinza: #575859;
   --poppins: 'Poppins', sem serifa;
   --montserrat: 'Montserrat', sans-serif;
 }
@@ -29,31 +30,40 @@ nav.n1 {
   box-shadow: 0px 0px 7px var(--azul);
   width: 100%;
   height: 63px;
-  display: flex;
+  align-items: center;
 }
 
 div.funcoes {
-  display: flex;
-  width: 100%;
+  width: 90%;
   height: 63px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+div.logo {
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
+
+img.logo {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
 }
 
 div.PesuisaConta {
+  margin: 10px 0px;
+  /* margin-left: 80%; */
   display: flex;
-  margin: 8px 0px 0px 254px;
 }
 
 div.barraDePesquisa {
   background: #ffffff;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 5px 2px 2px 2px;
-  width: 409px;
   height: 20px;
-  margin-top: 4px;
-  margin-left: 10px;
 }
 
 input#inputTexto {
@@ -61,22 +71,42 @@ input#inputTexto {
   border: none;
   outline: none;
   padding: 5px;
-  width: 400px;
+  width: 0px;
+  transition: 0.4s;
+  text-decoration: none;
+  height: 20px
 }
 
-i.iPesquisa {
-  color: var(--azul);
-  font-size: 25px;
+a.search-btn {
+  color: #333;
+  float: right;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  transition: 5s;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-div.lista {
+a.search-btn i {
+  color: var(--cinza);
+  font-size: 1.5rem;
+}
+
+div.barraDePesquisa:hover > input#inputTexto {
+  width: 246px;
+  padding: 0 6px;
+}
+
+/* div.lista {
   padding: 10px;
   background: white;
   border-radius: 0 0 7px 7px;
   display: none;
   max-height: 200px;
   overflow-y: auto;
-}
+} */
 
 .icons {
   display: flex;
@@ -86,10 +116,17 @@ div.teste {
   margin-left: 600px;
 }
 
-span.conta {
-  font-size: 50px;
+i.conta {
+  font-size: 2.5rem;
   color: #324b52;
-  margin-left: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+i.carrinho {
+  font-size: 2.5rem;
+  color: #324b52;
+  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -141,16 +178,38 @@ section.cards {
   max-width: 66%;
   margin: 30px auto;
   overflow:hidden;
-}
+ }
 
 article.artigoCards {
   margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 3px #e5e4e4;
 }
 
-div.figureCards {
-  background-image: url("https://img.freepik.com/fotos-premium/suplementos-esportivos-e-halteres-fechados-em-um-fundo-escuro-composicao-plana-com-proteina-e_179738-951.jpg?w=2000");
+div.figureCards1 {
+  background-image: url("../img/imgPreTreino.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+div.figureCards2 {
+  background-image: url("../img/imgCreatina.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+div.figureCards3 {
+  background-image: url("../img/imgWhey.webp");
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
   width: 100%;
@@ -194,15 +253,15 @@ a.maisCards:hover {
 div.cardSlide {
   display: flex;
   margin: 20px auto;
-  width: 97%;
+  width: 80%;
   height: 500px;
   text-align: center;
   align-items: center;
 }
 
 div.main {
-  width: 90%;
-  height: 300px;
+  width: 80%;
+  height: 450px;
   margin: 20px auto;
   box-shadow: 0px 0px 3px grey;
   position: relative;
@@ -213,7 +272,6 @@ div.main {
 img.slide {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: center;
   transition: 1s;
   position: absolute;
@@ -307,6 +365,114 @@ div.carousel img {
 div.carousel img:first-child {
   margin-left: 0px;
 }
+
+footer.footer {
+  background-color: var(--cinza);
+  width: 100%;
+  height: 300px;
+}
+
+div.rodapé {
+  display: flex;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+div.Logo {
+  margin: 40px 40px 40px 0px;
+}
+
+div.Logo img {
+  height: 150px;
+  width: 150px;
+}
+
+div.inicio {
+  display: grid;
+  text-align: left;
+  margin: 40px 40px 40px 80px;
+}
+
+div.inicio h3 {
+  color: white;
+  font-family: var(--poppins);
+  font-size: .9rem;
+  line-height: 30px;
+}
+
+div.inicio a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--montserrat);
+  font-size: .9rem;
+  line-height: 30px;
+}
+
+div.inicio a:hover {
+  text-decoration: underline;
+}
+
+div.Contatos {
+  display: grid;
+  padding-top: 10px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+div.RedesSociais {
+  display: flex;
+  margin: 40px 40px 0px 40px;
+}
+
+div.Twitter {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+div.Facebook {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+div.Instagram {
+  cursor: pointer;
+}
+
+div.Twitter i:hover {
+  color: var(--vermelho);
+  transition: .3s;
+}
+
+div.Facebook i:hover {
+  color: var(--vermelho);
+  transition: .3s;
+}
+
+div.Instagram i:hover {
+  color: var(--vermelho);
+  transition: .3s;
+}
+
+div.RedesSociais i {
+  color: white;
+  font-size: 1.8rem;
+}
+
+div.Contatos button {
+  background-color: var(--vermelho);
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 8px;
+  font-family: var(--poppins);
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+
 
 /* TELA DE VENDAS */
 
