@@ -12,40 +12,32 @@
   <header class="cabeçalho">
     <nav class="n1">
       <div class="funcoes">
-        <div class="PesuisaConta">
-          <div class="barraDePesquisa">
-            <input id="inputTexto" type="text" placeholder="Search ...">
-            <i class="iPesquisa"></i>
-          </div>
-          <div class="lista"></div>
+        <div class="logo">
+          <img src="img/i.png" alt="Logo do site">  
+          <h1>iFitness</h1>  
+        </div>
+        <div class="MenuConta"> 
+          <nav class="nav">
+            <a href="Index.html" class="nav-item" active-color="#ffffff">Home</a>
+            <a href="compra.html" class="nav-item" active-color="#ffffff">Vendas</a>
+            <a href="#" class="nav-item" active-color="#ffffff">Sobre</a>
+            <span class="nav-indicator"></span>
+          </nav>
           <div class="icons">
-            <span class="conta material-symbols-outlined">
-              account_circle
-            </span>
-            <div class="teste">
-              <a class="home" href="Index.html">
-                <span class="home material-symbols-outlined">
-                  home
-                </span>
-              </a>
-              <span class="fone material-symbols-outlined">
-                headset_mic
-              </span>
-              <a href="loja.html">
-                <span class="bolsa material-symbols-outlined">
-                  local_mall
-                </span>
-              </a>
-            </div>
+            <i class="conta fa-regular fa-user"></i>
+            <i class="carrinho fa-solid fa-cart-shopping"></i>
           </div>
         </div>
       </div>
     </nav>
     <nav class="n2">
-      <div class="menuLocalizacao">
-        <span class="distancia material-symbols-outlined">
-          distance
-        </span>
+      <div class="pesquisar">
+        <div class="barraDePesquisa">
+          <a class="search-btn" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <input id="inputTexto" type="text" placeholder="Search ...">
+        </div>
       </div>
     </nav>
   </header>
