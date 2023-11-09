@@ -45,58 +45,29 @@ div.logo {
   height: 60px;
   align-items: center;
   display: flex;
+  margin-right: 50px;
 }
 
-img.logo {
-  height: 60px;
-  width: 60px;
+div.logo img {
+  height: 50px;
+  width: 35px;
   margin: 5px;
+}
+
+div.logo h1 {
+  color: #333;
+  font-family: var(--montserrat);
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 div.PesuisaConta {
   margin: 10px 0px;
   /* margin-left: 80%; */
   display: flex;
-}
-
-div.barraDePesquisa {
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 5px 2px 2px 2px;
-  height: 20px;
-}
-
-input#inputTexto {
-  font-size: 18px;
-  border: none;
-  outline: none;
-  padding: 5px;
-  width: 0px;
-  transition: 0.4s;
-  text-decoration: none;
-  height: 20px
-}
-
-a.search-btn {
-  color: #333;
-  float: right;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  transition: 5s;
-  text-align: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-a.search-btn i {
-  color: var(--cinza);
-  font-size: 1.5rem;
-}
-
-div.barraDePesquisa:hover > input#inputTexto {
-  width: 246px;
-  padding: 0 6px;
+  position: relative;
 }
 
 /* div.lista {
@@ -107,14 +78,6 @@ div.barraDePesquisa:hover > input#inputTexto {
   max-height: 200px;
   overflow-y: auto;
 } */
-
-.icons {
-  display: flex;
-}
-
-div.teste {
-  margin-left: 600px;
-}
 
 i.conta {
   font-size: 2.5rem;
@@ -130,28 +93,6 @@ i.carrinho {
   cursor: pointer;
 }
 
-a.home {
-  text-decoration: none;
-}
-
-span.home {
-  font-size: 50px;
-  color: #324b52;
-  cursor: pointer;
-}
-
-span.fone {
-  font-size: 50px;
-  color: #324b52;
-  cursor: pointer;
-}
-
-span.bolsa {
-  font-size: 50px;
-  color: #324b52;
-  cursor: pointer;
-}
-
 nav.n2 {
   background-color: var(--vermelho);
   width: 100%;
@@ -160,17 +101,58 @@ nav.n2 {
   display: flex;
 }
 
-div.menuLocalizacao {
-  display: flex;
-  width: 97%;
+div.pesquisar {
+  background-color: yellow;
   margin: 0 auto;
+  width: 90%;
+  background-color: yellow;
 }
 
-span.distancia {
-  font-size: 50px;
-  color: #ffffff;
-  margin: 3px 0px 0px 0px;
-  cursor: pointer;
+div.barraDePesquisa {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 2px 2px 2px 5px; /* Ajustado o raio da borda para a esquerda */
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden; /* Adicionado overflow: hidden; para ocultar o input quando não estiver em foco */
+}
+
+input#inputTexto {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 0px;
+  transition: 0.4s;
+  text-decoration: none;
+  height: 20px;
+  position: relative;
+  margin-left: auto; /* Mover o input para a extremidade direita */
+}
+
+a.search-btn {
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a.search-btn i {
+  color: var(--cinza);
+  font-size: 1.5rem;
+}
+
+div.barraDePesquisa:hover > input#inputTexto {
+  width: 246px;
+  padding: 0 6px;
+  margin-left: 0; /* Quando a barra de pesquisa está em foco, ajusta o margin-left para 0 para expandir para a esquerda */
 }
 
 section.cards {
