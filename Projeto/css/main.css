@@ -525,6 +525,7 @@ div.imgVenda {
   width: 60%;
   height: 100%;
   position: relative;
+  background-color: yellow;
 }
 
 div.imgVenda img {
@@ -541,6 +542,7 @@ div.imgPVenda {
   width: 20%;
   margin: 10px;
   box-shadow: 0px 0px 2px rgb(124, 124, 124);
+  cursor: pointer;
 }
 
 div.imgPVenda img {
@@ -1084,4 +1086,75 @@ article.imagemLateral {
 div.img {
   transform: translateY(20%); 
   margin: 0 auto;
+}
+
+/* Sobre */
+
+section.primeira {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+article.conteúdo {
+  width: 50%;
+  text-align: left;
+  padding-right: 30px;
+}
+
+article.conteúdo h1 {
+  color: #333;
+  font-family: var(--poppins);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+section.segunda {
+  width: 70%;
+  margin: 20px auto;
+}
+
+div.textoSobre {
+  text-align: justify;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.textoSobre p {
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  color: var(--cinza);
+  line-height: 30px;
+}
+
+article.conteúdo p {
+  color: var(--cinza);
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+article.imagemConteúdo {
+  width: 50%;
+  text-align: center;
+}
+
+article.imagemConteúdo img {
+  width: 400px;
+}
+
+div.imgSobre {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.imgSobre img {
+  width: 400px;
+  margin: 0 auto;
+  object-fit: cover;
 }
