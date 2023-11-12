@@ -93,3 +93,8 @@ items.forEach((item, index) => {
   item.addEventListener('click', (e) => { handleIndicator(e.target)});
   item.classList.contains('is-active') && handleIndicator(item);
 });
+
+function exibirCategoria(categoria) {
+  var url = "compra.html?categoria=" + categoria;
+  window.location.href = url;
+}
